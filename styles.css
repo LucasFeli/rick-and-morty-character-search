@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00606a;
+  color: #333;
+}
+
+header {
+  background-color: #004d5d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header button:hover {
+  background-color: #21a1f1;
+}
+
+/* Grid de personajes */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.character-card {
+  background-color: #00fbd5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 5, 5, 2);
+  overflow: hidden;
+  text-align: center;
+  opacity: 0; /* Iniciar invisible para el efecto fade-in */
+  transform: scale(0.95); /* Reducir tamaño inicialmente para el efecto zoom */
+  animation: fadeIn 0.5s ease-out forwards; /* Aplicar la animación */
+  transition: transform 10s ease; /* Transición suave para el efecto hover */
+}
+
+.character-card:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la tarjeta en un 5% */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Incrementa la sombra para más énfasis */
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85); /* Comienza con un tamaño más pequeño */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); /* Termina con el tamaño original */
+  }
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+}
+
+.character-card h3 {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #004d5d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.load-more {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  display: block;
+}
+
+.load-more:hover {
+  background-color: #21a1f1;
+}
