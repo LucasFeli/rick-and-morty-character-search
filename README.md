@@ -2,6 +2,10 @@
 
 Este es un proyecto de una página web que consume la API de Rick and Morty para buscar y mostrar personajes de la serie. La página carga inicialmente todos los personajes y permite a los usuarios buscar personajes específicos en tiempo real. También incluye un botón para cargar más personajes de manera paginada y una animación para mejorar la experiencia de usuario.
 
+## Pagina de Muestra
+
+https://rick-and-morty-character-search-one.vercel.app/
+
 ## Tecnologías utilizadas
 
 - **HTML**: Estructura del contenido de la página web.
